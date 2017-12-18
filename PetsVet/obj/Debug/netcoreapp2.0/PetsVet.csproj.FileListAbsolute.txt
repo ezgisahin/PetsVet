@@ -1,0 +1,11 @@
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\PetsVet\PetsVet\bin\Debug\netcoreapp2.0\PetsVet.deps.json
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\PetsVet\PetsVet\bin\Debug\netcoreapp2.0\PetsVet.runtimeconfig.json
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\PetsVet\PetsVet\bin\Debug\netcoreapp2.0\PetsVet.runtimeconfig.dev.json
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\PetsVet\PetsVet\bin\Debug\netcoreapp2.0\PetsVet.dll
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\PetsVet\PetsVet\bin\Debug\netcoreapp2.0\PetsVet.pdb
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\PetsVet\PetsVet\obj\Debug\netcoreapp2.0\PetsVet.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\PetsVet\PetsVet\obj\Debug\netcoreapp2.0\PetsVet.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\PetsVet\PetsVet\obj\Debug\netcoreapp2.0\PetsVet.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\PetsVet\PetsVet\obj\Debug\netcoreapp2.0\PetsVet.AssemblyInfo.cs
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\PetsVet\PetsVet\obj\Debug\netcoreapp2.0\PetsVet.dll
+C:\Users\Admin\Documents\Visual Studio 2017\Projects\PetsVet\PetsVet\obj\Debug\netcoreapp2.0\PetsVet.pdb

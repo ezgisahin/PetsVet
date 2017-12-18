@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="content">
+    <section id="home-page-banner" class="home-page-banner">
+        <img src="~/premedi/images/home-v1.png" alt="" class="img-responsive home-banner" />    <div class="image-caption">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 col-md-7 col-lg-7">
+                        <h1 class="fadeInDown wow" data-wow-duration="1s">DOSTLARIMIZI ÖNEMSİYORUZ</h1>
+                        <a href="about.html" class="hidden-xs btn btn-primary fadeInUp wow" data-wow-duration="1s">Hakkımızda</a>
+                        <a href="contact.html" class="hidden-xs btn btn-default fadeInUp wow" data-wow-duration="1s">İletişime Geçin</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                        <form id="search-form" class="search-form form-horizontal">
+                            <div class="form-group search-bar pull-left">
+                                <div class="col-xs-12 col-sm-12 input-group col-md-12 col-lg-12">
+                                    <input class="form-control" placeholder="Konum" id="search" name="search" type="text" />
+                                    <span class="input-group-addon"><i class="icofont icofont-location-pin"></i></span>
+
+                                </div>
+                            </div>
+                            <div class="form-group search-bar pull-left">
+                                <div class="col-xs-12 col-sm-12 input-group col-md-12 col-lg-12">
+                                    <input class="form-control" placeholder="Uzmanlıklarımız" id="search" name="search" type="text" />
+                                    <span class="input-group-addon"><i class="icofont icofont-stethoscope"></i></span>
+                                </div>
+                            </div>
+                            <div class="form-group pull-left">
+                                <button type="submit" class="btn btn-default" name="signup">ARA</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
