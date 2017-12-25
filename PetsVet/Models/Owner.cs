@@ -11,7 +11,7 @@ namespace PetsVet.Models
         public int Id { get; set; }
         [Display(Name="Sahibin Adı")]
         public string FirstName { get; set; }
-        [Display(Name = "Sahibin Soyadı")]
+        [Display(Name="Sahibin Soyadı")]
         public string LastName { get; set; }
         public DateTime CreateDate { get; set; }
         [StringLength(200)]

@@ -15,5 +15,7 @@ namespace PetsVet.Data
         }
         public DbSet<Owner> Owners { get; set; }
         public DbSet<Animal> Animals { get; set; }
+        public DbSet<PetsVet.Models.Appointment> Appointment { get; set; }
+        public DbSet<PetsVet.Models.Doctor> Doctor { get; set; }
     }
 }
