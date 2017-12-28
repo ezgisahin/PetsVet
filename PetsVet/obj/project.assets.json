@@ -13122,7 +13122,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Users\\Ezgi\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13131,17 +13131,17 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\Visual Studio 2017\\Projects\\PetsVet\\PetsVet\\PetsVet.csproj",
+      "projectUniqueName": "C:\\Users\\Ezgi\\Source\\Repos\\PetsVet\\PetsVet\\PetsVet.csproj",
       "projectName": "PetsVet",
-      "projectPath": "C:\\Users\\Admin\\Documents\\Visual Studio 2017\\Projects\\PetsVet\\PetsVet\\PetsVet.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Documents\\Visual Studio 2017\\Projects\\PetsVet\\PetsVet\\obj\\",
+      "projectPath": "C:\\Users\\Ezgi\\Source\\Repos\\PetsVet\\PetsVet\\PetsVet.csproj",
+      "packagesPath": "C:\\Users\\Ezgi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ezgi\\Source\\Repos\\PetsVet\\PetsVet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ezgi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

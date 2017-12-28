@@ -57,6 +57,50 @@ namespace PetsVet.Migrations
                     b.ToTable("Animals");
                 });
 
+            modelBuilder.Entity("PetsVet.Models.Appointment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("AppointmentDate");
+
+                    b.Property<string>("Departmant");
+
+                    b.Property<string>("Doctor");
+
+                    b.Property<int?>("DoctorId");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(200);
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(200);
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasMaxLength(200);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DoctorId");
+
+                    b.ToTable("Appointment");
+                });
+
+            modelBuilder.Entity("PetsVet.Models.Doctor", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(200);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Doctor");
+                });
+
             modelBuilder.Entity("PetsVet.Models.Owner", b =>
                 {
                     b.Property<int>("Id")
@@ -86,6 +130,13 @@ namespace PetsVet.Migrations
                     b.HasOne("PetsVet.Models.Owner", "Owner")
                         .WithMany("Animals")
                         .HasForeignKey("OwnerId");
+                });
+
+            modelBuilder.Entity("PetsVet.Models.Appointment", b =>
+                {
+                    b.HasOne("PetsVet.Models.Doctor", "Doctors")
+                        .WithMany("Appointments")
+                        .HasForeignKey("DoctorId");
                 });
 #pragma warning restore 612, 618
         }

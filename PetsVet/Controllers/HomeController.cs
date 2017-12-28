@@ -17,14 +17,28 @@ namespace PetsVet.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Kliniğiniz Hakkında";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "İletişim Sayfamız";
+
+            return View();
+        }
+
+        public IActionResult Appointment()
+        {
+            ViewData["Message"] = "Randevu Alınız";
+
+            return View();
+        }
+
+        public IActionResult Doctors()
+        {
+            ViewData["Message"] = "Doktorlarımız";
 
             return View();
         }

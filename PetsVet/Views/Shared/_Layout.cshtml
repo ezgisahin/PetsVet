@@ -42,11 +42,11 @@
                                 <p><span>E-mail:</span><a href="mailto:petsveterinerlik@pets.com"> petsveterinerlik@pets.com</a></p>
                             </div>
                         </div>
-                        <div class="hidden-xs col-xs-12 col-sm-3 col-md-2 col-lg-3">
+                        @*<div class="hidden-xs col-xs-12 col-sm-3 col-md-2 col-lg-3">
                             <div class="book-appoinment text-right">
                                 <a href="#" class="btn btn-default" data-toggle="modal" data-target="#myModal">Randevu</a>
                             </div>
-                        </div>
+                        </div>*@
                         <!-- Modal -->
                         <div class="modal fade premedi-popup" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                             <div class="modal-dialog" role="document">
@@ -157,9 +157,11 @@
                                     <ul class="nav navbar-nav underline">
                                         @*<li class=" active "> <a href="index-2.html" title="HOME" id="home">ANASAYFA</a></li>*@
                                         <li class=""> <a asp-controller="Home" asp-action="Index" title="HOME" id="home">ANASAYFA</a></li>
-                                        <li class=""> <a asp-controller="Home" asp-action="Departments" title="DEPARTMENTS" id="departments-page">BÖLÜMLER</a></li>
+                                        @*<li class=""> <a asp-controller="Home" asp-action="Departments" title="DEPARTMENTS" id="departments-page">BÖLÜMLER</a></li>*@
                                         <li class=""> <a asp-controller="Home" asp-action="About" title="ABOUT" id="about-page">HAKKIMIZDA</a></li>
                                         <li class=""> <a asp-controller="Home" asp-action="Contact" title="CONTACT" id="contact-page">İLETİŞİM</a></li>
+                                        <li class=""> <a asp-controller="Home" asp-action="Doctors" title="DOCTORS" id="doctors">DOKTORLARIMIZ</a></li>
+                                        <li class=""> <a asp-controller="Home" asp-action="Appointment" title="APPOINTMENT" id="appointment">RANDEVU</a></li>
                                         @*<li class=""> <a href="department.html" title="DEPARTMENTS" id="departments">BÖLÜMLER</a></li>*@
                                         @*<li class=" dropdown "> <a data-toggle="dropdown" href="#" title="PAGE" id="page">SAYFA <span class="caret"></span></a><ul class="dropdown-menu">*@
                                         @*<li class=""> <a href="home-v2.html" title="HOME PAGE V2" id="home-2">ANASAYFA V2</a></li>*@
@@ -481,7 +483,92 @@
             </section>
             </main>*@
 
-
+    <section id="footer" class="footer">
+        <div class="footer-widget">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 footer-responsive-media">
+                        <h4 class="icon-head">Hakkımızda</h4>
+                        <div class="footer-about">
+                            <p></p>
+                            <ul>
+                                <li><i class="icofont icofont-location-pin"></i> Ataşehir/İstanbul</li>
+                                <li><i class="icofont icofont-ui-message"></i> <a href="email:petsveterinerlik@pets.com">petsveterinerlik@pets.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 footer-responsive-media">
+                        <h4 class="icon-head">Site Haritası</h4>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-6">
+                                <div class="footer-nav-list">
+                                    <ul>
+                                        <li><a asp-controller="Home" asp-action="Appointment"><i class="icofont icofont-double-right"></i> Randevu</a></li>
+                                        <li><a a asp-controller="Home" asp-action="Doctors"><i class="icofont icofont-double-right"></i> Uzmanlarımız</a></li>
+                                        <li><a href="#"><i class="icofont icofont-double-right"></i> Neden Biz?</a></li>
+                                        <li><a href="#"><i class="icofont icofont-double-right"></i> Hizmetlerimiz</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            @*<div class="col-xs-12 col-sm-12 col-md-6 col-6">
+                                <div class="footer-nav-list">
+                                    <ul>
+                                        <li><a href="#"><i class="icofont icofont-double-right"></i> Health Tips</a></li>
+                                        <li><a href="#"><i class="icofont icofont-double-right"></i> Our Latest News</a></li>
+                                        <li><a href="#"><i class="icofont icofont-double-right"></i> Patient Feedback</a></li>
+                                    </ul>
+                                </div>
+                            </div>*@
+                        </div>
+                    </div>
+                    @*<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-responsive-media">
+                        <h4 class="icon-head">Instagram</h4>
+                        <div class="insta-widget">
+                            <figure>
+                                <a href="#">
+                                    <img src="images/instagram-1.jpg" alt="" class="img-responsive pull-left" />
+                                </a>
+                            </figure>
+                            <figure>
+                                <a href="#">
+                                    <img src="images/instagram-2.jpg" alt="" class="img-responsive pull-left" />
+                                </a>
+                            </figure>
+                            <figure>
+                                <a href="#">
+                                    <img src="images/instagram-3.jpg" alt="" class="img-responsive pull-left" />
+                                </a>
+                            </figure>
+                            <figure>
+                                <a href="#">
+                                    <img src="images/instagram-4.jpg" alt="" class="img-responsive pull-left" />
+                                </a>
+                            </figure>
+                            <figure>
+                                <a href="#">
+                                    <img src="images/instagram-5.jpg" alt="" class="img-responsive pull-left" />
+                                </a>
+                            </figure>
+                            <figure>
+                                <a href="#">
+                                    <img src="images/instagram-6.jpg" alt="" class="img-responsive pull-left" />
+                                </a>
+                            </figure>
+                        </div>
+                    </div>*@
+                </div>
+            </div>
+        </div>
+        <div class="copyright-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                        <p class="copyrights">Copyright <i class="icofont icofont-copyright"></i> 2017. Tüm Hakları Saklıdır.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
             
 
             <script src="~/premedi/js/jquery.min.js"></script>

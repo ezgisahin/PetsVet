@@ -149,5 +149,10 @@ namespace PetsVet.Controllers
         {
             return _context.Appointment.Any(e => e.Id == id);
         }
+
+        public IActionResult SuccessfullyCreated()
+        {
+            return RedirectToAction("Index");
+        }
     }
 }

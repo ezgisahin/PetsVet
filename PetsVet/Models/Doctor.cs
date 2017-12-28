@@ -10,6 +10,9 @@ namespace PetsVet.Models
     {
         public int Id { get; set; }
         [StringLength(200)]
+        [Display(Name = "Doktor Adı")]
         public string Name { get; set; }
+
+        public virtual ICollection<Appointment> Appointments { get; set; }
     }
 }

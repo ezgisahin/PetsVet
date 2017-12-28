@@ -1,16 +1,21 @@
 ﻿@{
-    ViewData["Title"] = "Contact";
+    ViewData["Title"] = "İletişim";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
 
-<address>
-    Ataşehir<br />
-    İstanbul<br />
-    <abbr title="Phone">Tel:</abbr>
-    +90 216 73 87
-</address>
+@*<h3>@ViewData["Message"]</h3>*@
 
-<address>
-    <strong>İrtibat:</strong> <a href="mailto:petsveterinerlik@pets.com">petsveterinerlik@pets.com</a><br />
-</address>
+<div class="container">
+    <h2>@ViewData["Title"]</h2>
+
+    <address>
+        Ataşehir<br />
+        İstanbul<br />
+                <div class="call-now">
+                    <p><span>Tel:</span><a href="tel:+902165747387"> +90 216 73 87</a></p>
+                </div>
+    </address>
+
+    <address>
+        <strong>İrtibat:</strong> <a href="mailto:petsveterinerlik@pets.com">petsveterinerlik@pets.com</a><br />
+    </address>
+</div>

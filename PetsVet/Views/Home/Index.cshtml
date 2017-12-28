@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -11,720 +11,720 @@
         <div class="row">
             <div class="col-sm-7 col-md-7 col-lg-7">
                 <h1 class="fadeInDown wow" data-wow-duration="1s">DOSTLARIMIZI ÖNEMSİYORUZ</h1>
-                <a href="about.html" class="hidden-xs btn btn-primary fadeInUp wow" data-wow-duration="1s">Hakkımızda</a>
-                <a href="contact.html" class="hidden-xs btn btn-default fadeInUp wow" data-wow-duration="1s">İletişime Geçin</a>
+                <a asp-controller="Home" asp-action="About" class="hidden-xs btn btn-primary fadeInUp wow" data-wow-duration="1s">Hakkımızda</a>
+                <a asp-controller="Home" asp-action="Contact" class="hidden-xs btn btn-default fadeInUp wow" data-wow-duration="1s">İletişime Geçin</a>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                <form id="search-form" class="search-form form-horizontal">
-                    <div class="form-group search-bar pull-left">
-                        <div class="col-xs-12 col-sm-12 input-group col-md-12 col-lg-12">
-                            <input class="form-control" placeholder="Konum" id="search" name="search" type="text" />
-                            <span class="input-group-addon"><i class="icofont icofont-location-pin"></i></span>
-
-                        </div>
-                    </div>
-                    <div class="form-group search-bar pull-left">
-                        <div class="col-xs-12 col-sm-12 input-group col-md-12 col-lg-12">
-                            <input class="form-control" placeholder="Uzmanlıklarımız" id="search" name="search" type="text" />
-                            <span class="input-group-addon"><i class="icofont icofont-stethoscope"></i></span>
-                        </div>
-                    </div>
-                    <div class="form-group pull-left">
-                        <button type="submit" class="btn btn-default" name="signup">ARA</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <main class="main">
-        <!-- our department starts -->
-        <section id="our-department" class="our-department">
-            <div class="container">
-                <div class="row">
+        @*<div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                        <div class="hidden">
-                            <h2>OUR DEPARTMENT</h2>
-                            <p>
-                                lorem ipsum dolor sit amet consectetur adipiscing elit
-                            </p>
-                            <div class="divider">
-                                <span><i class="icofont icofont-bed-patient"></i></span>
+                        <form id="search-form" class="search-form form-horizontal">
+                            <div class="form-group search-bar pull-left">
+                                <div class="col-xs-12 col-sm-12 input-group col-md-12 col-lg-12">
+                                    <input class="form-control" placeholder="Konum" id="search" name="search" type="text" />
+                                    <span class="input-group-addon"><i class="icofont icofont-location-pin"></i></span>
+
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="">
-                        <ul id="tabnav" class="nav nav-pills nav-stacked col-sm-3 col-md-3 col-lg-3"><li class="active"><a href="#CARDIOLOGY" data-toggle="tab"><i class='icofont icofont-pulse'></i> Cardiology</a></li><li class=""><a href="#NEUROLOGY" data-toggle="tab"><i class='icofont icofont-dna-alt-1'></i> Neurology</a></li><li class=""><a href="#DIAGNOSTICS" data-toggle="tab"><i class='icofont icofont-test-bottle'></i> Diagnostics</a></li><li class=""><a href="#DENTAL" data-toggle="tab"><i class='icofont icofont-tooth'></i> Detal</a></li><li class=""><a href="#EYECARE" data-toggle="tab"><i class='icofont icofont-eye-alt'></i> Eye Care</a></li><li class=""><a href="#EMERGENCY" data-toggle="tab"><i class='icofont icofont-ambulance'></i> Emergency</a></li><li class=""><a href="#EMERGENCY01" data-toggle="tab"><i class='icofont icofont-ambulance'></i> Emergency</a></li></ul><div class="tab-content tab-content col-sm-9 col-md-9 col-lg-offset-1 col-lg-8 no-padding">
-                            <div class="tab-pane active" id="CARDIOLOGY">
-                                <div class="tab-image">
-                                    <img src="images/home-v1-tab.jpg" alt="" class="img-responsive" />
+                            <div class="form-group search-bar pull-left">
+                                <div class="col-xs-12 col-sm-12 input-group col-md-12 col-lg-12">
+                                    <input class="form-control" placeholder="Uzmanlıklarımız" id="search" name="search" type="text" />
+                                    <span class="input-group-addon"><i class="icofont icofont-stethoscope"></i></span>
                                 </div>
-                                <h4 class="department-tab">
-                                    About the cardiology
-                                </h4>
-                                <p class="department-para">
-                                    Lorem ipsum dolor sit amet consectetur adipiscing elit, tempus tortor congue torquent neque primis.
-                                </p>
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                        <ul>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Care About Your Health
-                                            </li>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Fast and Flex Service
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                        <ul>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Professional Doctors
-                                            </li>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Care About Your Health
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <a href="contact.html" class="btn btn-default">Contact US</a>
-                            </div><div class="tab-pane " id="NEUROLOGY">
-                                <div class="tab-image">
-                                    <img src="images/home-v1-tab-2.jpg" alt="" class="img-responsive" />
-                                </div>
-                                <h4 class="department-tab">
-                                    About the neurology
-                                </h4>
-                                <p class="department-para">
-                                    Lorem ipsum dolor sit amet consectetur adipiscing elit est, mi morbi lectus risus rutrum tempus curabitur leo pretium, ullamcorper tristique aliquet blandit ultricies fames arcu.
-                                </p>
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                        <ul>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Professional Doctors
-                                            </li>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Care About Your Health
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                        <ul>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Fast and Flex Service
-                                            </li>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Care About Your Health
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <a href="contact.html" class="btn btn-default">Contact US</a>
-                            </div><div class="tab-pane " id="DIAGNOSTICS">
-                                <div class="tab-image">
-                                    <img src="images/home-v1-tab-3.jpg" alt="" class="img-responsive" />
-                                </div>
-                                <h4 class="department-tab">
-                                    About the diagnostics
-                                </h4>
-                                <p class="department-para">
-                                    Lorem ipsum dolor sit amet consectetur adipiscing elit, cursus dignissim eu platea porttitor hendrerit placerat, praesent feugiat litora arcu montes sodales.
-                                </p>
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                        <ul>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Care About Your Health
-                                            </li>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Care About Your Health
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                        <ul>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Fast and Flex Service
-                                            </li>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Professional Doctors
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <a href="contact.html" class="btn btn-default">Contact US</a>
-                            </div><div class="tab-pane " id="DENTAL">
-                                <div class="tab-image">
-                                    <img src="images/home-v1-tab-4.jpg" alt="" class="img-responsive" />
-                                </div>
-                                <h4 class="department-tab">
-                                    About the detal
-                                </h4>
-                                <p class="department-para">
-                                    Lorem ipsum dolor sit amet consectetur adipiscing, elit fames nostra ac interdum viverra, pulvinar dignissim enim lobortis ad.
-                                </p>
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                        <ul>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Fast and Flex Service
-                                            </li>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Care About Your Health
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                        <ul>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Care About Your Health
-                                            </li>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Professional Doctors
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <a href="contact.html" class="btn btn-default">Contact US</a>
-                            </div><div class="tab-pane " id="EYECARE">
-                                <div class="tab-image">
-                                    <img src="images/home-v1-tab-5.jpg" alt="" class="img-responsive" />
-                                </div>
-                                <h4 class="department-tab">
-                                    About the ophthalmology
-                                </h4>
-                                <p class="department-para">
-                                    Lorem ipsum dolor sit amet consectetur adipiscing elit, aliquam cursus elementum dignissim hac molestie, gravida mattis imperdiet laoreet erat eros.
-                                </p>
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                        <ul>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Fast and Flex Service
-                                            </li>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Care About Your Health
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                        <ul>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Professional Doctors
-                                            </li>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Care About Your Health
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <a href="contact.html" class="btn btn-default">Contact US</a>
-                            </div><div class="tab-pane " id="EMERGENCY">
-                                <div class="tab-image">
-                                    <img src="images/home-v1-tab-6.jpg" alt="" class="img-responsive" />
-                                </div>
-                                <h4 class="department-tab">
-                                    About the emergency services
-                                </h4>
-                                <p class="department-para">
-                                    Lorem ipsum dolor sit amet consectetur adipiscing elit blandit, sociis imperdiet ut habitant aenean in pharetra neque erat, porta fames tristique suscipit nec platea nunc.
-                                </p>
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                        <ul>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Fast and Flex Service
-                                            </li>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Professional Doctors
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                        <ul>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Care About Your Health
-                                            </li>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Care About Your Health
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <a href="contact.html" class="btn btn-default">Contact US</a>
-                            </div><div class="tab-pane " id="EMERGENCY01">
-                                <div class="tab-image">
-                                    <img src="images/home-v1-tab-7.jpg" alt="" class="img-responsive" />
-                                </div>
-                                <h4 class="department-tab">
-                                    About the emergency services
-                                </h4>
-                                <p class="department-para">
-                                    Lorem ipsum dolor sit amet consectetur adipiscing, elit metus suscipit fames viverra ac eu, quisque magna porttitor nisi vel.
-                                </p>
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                        <ul>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Care About Your Health
-                                            </li>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Professional Doctors
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                        <ul>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Care About Your Health
-                                            </li>
-                                            <li>
-                                                <i class="icofont icofont-check-circled"></i>
-                                                Fast and Flex Service
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <a href="contact.html" class="btn btn-default">Contact US</a>
                             </div>
-                        </div>
+                            <div class="form-group pull-left">
+                                <button type="submit" class="btn btn-default" name="signup">ARA</button>
+                            </div>
+                        </form>
                     </div>
-                    <!-- tab content -->
                 </div>
             </div>
-        </section>
-        <!-- our department ends -->
-        <!-- our Services starts -->
+            <main class="main">
+                <!-- our department starts -->
+                <section id="our-department" class="our-department">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                                <div class="hidden">
+                                    <h2>OUR DEPARTMENT</h2>
+                                    <p>
+                                        lorem ipsum dolor sit amet consectetur adipiscing elit
+                                    </p>
+                                    <div class="divider">
+                                        <span><i class="icofont icofont-bed-patient"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="">
+                                <ul id="tabnav" class="nav nav-pills nav-stacked col-sm-3 col-md-3 col-lg-3"><li class="active"><a href="#CARDIOLOGY" data-toggle="tab"><i class='icofont icofont-pulse'></i> Cardiology</a></li><li class=""><a href="#NEUROLOGY" data-toggle="tab"><i class='icofont icofont-dna-alt-1'></i> Neurology</a></li><li class=""><a href="#DIAGNOSTICS" data-toggle="tab"><i class='icofont icofont-test-bottle'></i> Diagnostics</a></li><li class=""><a href="#DENTAL" data-toggle="tab"><i class='icofont icofont-tooth'></i> Detal</a></li><li class=""><a href="#EYECARE" data-toggle="tab"><i class='icofont icofont-eye-alt'></i> Eye Care</a></li><li class=""><a href="#EMERGENCY" data-toggle="tab"><i class='icofont icofont-ambulance'></i> Emergency</a></li><li class=""><a href="#EMERGENCY01" data-toggle="tab"><i class='icofont icofont-ambulance'></i> Emergency</a></li></ul><div class="tab-content tab-content col-sm-9 col-md-9 col-lg-offset-1 col-lg-8 no-padding">
+                                    <div class="tab-pane active" id="CARDIOLOGY">
+                                        <div class="tab-image">
+                                            <img src="images/home-v1-tab.jpg" alt="" class="img-responsive" />
+                                        </div>
+                                        <h4 class="department-tab">
+                                            About the cardiology
+                                        </h4>
+                                        <p class="department-para">
+                                            Lorem ipsum dolor sit amet consectetur adipiscing elit, tempus tortor congue torquent neque primis.
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                <ul>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Care About Your Health
+                                                    </li>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Fast and Flex Service
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                <ul>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Professional Doctors
+                                                    </li>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Care About Your Health
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="contact.html" class="btn btn-default">Contact US</a>
+                                    </div><div class="tab-pane " id="NEUROLOGY">
+                                        <div class="tab-image">
+                                            <img src="images/home-v1-tab-2.jpg" alt="" class="img-responsive" />
+                                        </div>
+                                        <h4 class="department-tab">
+                                            About the neurology
+                                        </h4>
+                                        <p class="department-para">
+                                            Lorem ipsum dolor sit amet consectetur adipiscing elit est, mi morbi lectus risus rutrum tempus curabitur leo pretium, ullamcorper tristique aliquet blandit ultricies fames arcu.
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                <ul>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Professional Doctors
+                                                    </li>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Care About Your Health
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                <ul>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Fast and Flex Service
+                                                    </li>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Care About Your Health
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="contact.html" class="btn btn-default">Contact US</a>
+                                    </div><div class="tab-pane " id="DIAGNOSTICS">
+                                        <div class="tab-image">
+                                            <img src="images/home-v1-tab-3.jpg" alt="" class="img-responsive" />
+                                        </div>
+                                        <h4 class="department-tab">
+                                            About the diagnostics
+                                        </h4>
+                                        <p class="department-para">
+                                            Lorem ipsum dolor sit amet consectetur adipiscing elit, cursus dignissim eu platea porttitor hendrerit placerat, praesent feugiat litora arcu montes sodales.
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                <ul>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Care About Your Health
+                                                    </li>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Care About Your Health
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                <ul>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Fast and Flex Service
+                                                    </li>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Professional Doctors
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="contact.html" class="btn btn-default">Contact US</a>
+                                    </div><div class="tab-pane " id="DENTAL">
+                                        <div class="tab-image">
+                                            <img src="images/home-v1-tab-4.jpg" alt="" class="img-responsive" />
+                                        </div>
+                                        <h4 class="department-tab">
+                                            About the detal
+                                        </h4>
+                                        <p class="department-para">
+                                            Lorem ipsum dolor sit amet consectetur adipiscing, elit fames nostra ac interdum viverra, pulvinar dignissim enim lobortis ad.
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                <ul>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Fast and Flex Service
+                                                    </li>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Care About Your Health
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                <ul>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Care About Your Health
+                                                    </li>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Professional Doctors
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="contact.html" class="btn btn-default">Contact US</a>
+                                    </div><div class="tab-pane " id="EYECARE">
+                                        <div class="tab-image">
+                                            <img src="images/home-v1-tab-5.jpg" alt="" class="img-responsive" />
+                                        </div>
+                                        <h4 class="department-tab">
+                                            About the ophthalmology
+                                        </h4>
+                                        <p class="department-para">
+                                            Lorem ipsum dolor sit amet consectetur adipiscing elit, aliquam cursus elementum dignissim hac molestie, gravida mattis imperdiet laoreet erat eros.
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                <ul>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Fast and Flex Service
+                                                    </li>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Care About Your Health
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                <ul>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Professional Doctors
+                                                    </li>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Care About Your Health
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="contact.html" class="btn btn-default">Contact US</a>
+                                    </div><div class="tab-pane " id="EMERGENCY">
+                                        <div class="tab-image">
+                                            <img src="images/home-v1-tab-6.jpg" alt="" class="img-responsive" />
+                                        </div>
+                                        <h4 class="department-tab">
+                                            About the emergency services
+                                        </h4>
+                                        <p class="department-para">
+                                            Lorem ipsum dolor sit amet consectetur adipiscing elit blandit, sociis imperdiet ut habitant aenean in pharetra neque erat, porta fames tristique suscipit nec platea nunc.
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                <ul>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Fast and Flex Service
+                                                    </li>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Professional Doctors
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                <ul>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Care About Your Health
+                                                    </li>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Care About Your Health
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="contact.html" class="btn btn-default">Contact US</a>
+                                    </div><div class="tab-pane " id="EMERGENCY01">
+                                        <div class="tab-image">
+                                            <img src="images/home-v1-tab-7.jpg" alt="" class="img-responsive" />
+                                        </div>
+                                        <h4 class="department-tab">
+                                            About the emergency services
+                                        </h4>
+                                        <p class="department-para">
+                                            Lorem ipsum dolor sit amet consectetur adipiscing, elit metus suscipit fames viverra ac eu, quisque magna porttitor nisi vel.
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                <ul>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Care About Your Health
+                                                    </li>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Professional Doctors
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                <ul>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Care About Your Health
+                                                    </li>
+                                                    <li>
+                                                        <i class="icofont icofont-check-circled"></i>
+                                                        Fast and Flex Service
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="contact.html" class="btn btn-default">Contact US</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- tab content -->
+                        </div>
+                    </div>
+                </section>
+                <!-- our department ends -->
+                <!-- our Services starts -->
 
-        <section id="our-services" class="our-services">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                        <div class="top-text">
-                            <h2>
-                                OUR SERVICES
-                            </h2>
-                            <p>lorem ipsum dolor sit amet consectetur adipiscing elit</p>
-                            <div class="divider">
-                                <span><i class="icofont icofont-bed-patient"></i></span>
+                <section id="our-services" class="our-services">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                                <div class="top-text">
+                                    <h2>
+                                        OUR SERVICES
+                                    </h2>
+                                    <p>lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                                    <div class="divider">
+                                        <span><i class="icofont icofont-bed-patient"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                                <div class="services-box text-center">
+                                    <i class="icofont icofont-heartbeat"></i>
+                                    <h4>
+                                        Heart Surgery
+                                    </h4>
+                                    <p>
+                                        Open-heart surgery is any type of surgery where the chest is cut open and surgery
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                                <div class="services-box text-center">
+                                    <i class="icofont icofont-tooth"></i>
+                                    <h4>
+                                        Dental Care
+                                    </h4>
+                                    <p>
+                                        HealthCheck also provides FREE dental services to children up to age21
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                                <div class="services-box text-center">
+                                    <i class="icofont icofont-icu"></i>
+                                    <h4>
+                                        Emergency Services
+                                    </h4>
+                                    <p>
+                                        Emergency medical services, also known as ambulance services or paramedic services
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                                <div class="services-box text-center">
+                                    <i class="icofont icofont-dna-alt-1"></i>
+                                    <h4>
+                                        DNA Testing
+                                    </h4>
+                                    <p>
+                                        DNA paternity testing is the use of DNA to determine two individuals are biologically
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                                <div class="services-box text-center">
+                                    <i class="icofont icofont-blood"></i>
+                                    <h4>
+                                        Blood Testing
+                                    </h4>
+                                    <p>
+                                        A blood test is a laboratory analysis is usually extracted from a vein
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                                <div class="services-box text-center">
+                                    <i class="icofont icofont-ambulance"></i>
+                                    <h4>
+                                        24/7 Support
+                                    </h4>
+                                    <p>
+                                        Free 24/7 support for patients in emergency time addition to free checkups every six months
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                                <div class="services-box text-center">
+                                    <i class="icofont icofont-bed-patient"></i>
+                                    <h4>
+                                        General Treatment
+                                    </h4>
+                                    <p>
+                                        General Treatment Guidelines are systematically developed  statemets that assist prescriber
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                                <div class="services-box text-center">
+                                    <i class="icofont icofont-prescription"></i>
+                                    <h4>
+                                        Free Checkup
+                                    </h4>
+                                    <p>
+                                        Protect your child by having them get a complete physical at the ages
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <!-- our Services ends -->
+                <!-- Appoinment starts -->
+                <section id="appoinment" class="appoinment">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6 text-center">
+                                <div class="appoinment-form fadeIn wow" data-wow-duration="1s">
+                                    <h2>RANDEVU</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    <div class="divider">
+                                        <span><i class="icofont icofont-bed-patient"></i></span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <form id="appoinment-form-fields" action="http://demo.vaahosttech.com/premedi/mail-part.html" method="post" class="appoinment-form-fields form-horizontal" data-fv-framework="bootstrap" data-fv-message="This value is not valid" data-fv-feedbackicons-valid="glyphicon glyphicon-ok" data-fv-feedbackicons-invalid="glyphicon glyphicon-remove" data-fv-feedbackicons-validating="glyphicon glyphicon-refresh">
+                                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 no-l-padding">
+                                                    <div class="form-group">
+                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                            <input class="form-control" placeholder="Adınız Soyadınız" id="name" name="name" type="text" data-fv-notempty="true" data-fv-notempty-message="The name is required" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                            <input class="form-control" placeholder="E-mail Adresiniz" id="email" name="email" type="email" data-fv-notempty="true" data-fv-notempty-message="The email address is required" data-fv-emailaddress="true" data-fv-emailaddress-message="The input is not a valid email address" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 validate-right-icon">
+                                                            <select class="form-control" name="doctors" id="doctors" data-fv-notempty="true" data-fv-notempty-message="This Field is required">
+                                                                <option>Doktorlarımız</option>
+                                                                <option>Murat İLGÜ</option>
+                                                                <option>Doğan AY</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 no-r-padding">
+                                                    <div class="form-group">
+                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                            <input class="form-control" placeholder="Telefon Numaranız" id="phone" name="phone" type="text" data-fv-notempty="true" data-fv-notempty-message="Phone Number is required" data-fv-integer="true" data-fv-integer-message="The input is not a valid Phone Number" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 validate-right-icon">
+                                                            <input type="text" name="dateTo" class="form-control datepicker" placeholder="GG/AA/YYYY:" id="dateTo" readonly="readonly" value="" data-fv-notempty="true" data-fv-date="true" data-fv-date-format="GG/AA/YYYY" data-fv-date-message="The value is not a valid date" />
+                                                            <span class="input-group-addon add-on"><i class="icofont icofont-ui-calendar"></i></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 validate-right-icon">
+                                                            <select class="form-control" name="departments" id="department" data-fv-notempty="true" data-fv-notempty-message="This Field is required">
+                                                                <option>İşlemler</option>
+                                                                <option>Aşı</option>
+                                                                <option>Tedavi</option>
+                                                                <option>Bakım</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                        <button type="submit" class="btn btn-default appoinment-form-submit" name="signup" data-loading-text="Processing...">Randevu Oluşturun</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
-                        <div class="services-box text-center">
-                            <i class="icofont icofont-heartbeat"></i>
-                            <h4>
-                                Heart Surgery
-                            </h4>
-                            <p>
-                                Open-heart surgery is any type of surgery where the chest is cut open and surgery
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
-                        <div class="services-box text-center">
-                            <i class="icofont icofont-tooth"></i>
-                            <h4>
-                                Dental Care
-                            </h4>
-                            <p>
-                                HealthCheck also provides FREE dental services to children up to age21
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
-                        <div class="services-box text-center">
-                            <i class="icofont icofont-icu"></i>
-                            <h4>
-                                Emergency Services
-                            </h4>
-                            <p>
-                                Emergency medical services, also known as ambulance services or paramedic services
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
-                        <div class="services-box text-center">
-                            <i class="icofont icofont-dna-alt-1"></i>
-                            <h4>
-                                DNA Testing
-                            </h4>
-                            <p>
-                                DNA paternity testing is the use of DNA to determine two individuals are biologically
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
-                        <div class="services-box text-center">
-                            <i class="icofont icofont-blood"></i>
-                            <h4>
-                                Blood Testing
-                            </h4>
-                            <p>
-                                A blood test is a laboratory analysis is usually extracted from a vein
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
-                        <div class="services-box text-center">
-                            <i class="icofont icofont-ambulance"></i>
-                            <h4>
-                                24/7 Support
-                            </h4>
-                            <p>
-                                Free 24/7 support for patients in emergency time addition to free checkups every six months
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
-                        <div class="services-box text-center">
-                            <i class="icofont icofont-bed-patient"></i>
-                            <h4>
-                                General Treatment
-                            </h4>
-                            <p>
-                                General Treatment Guidelines are systematically developed  statemets that assist prescriber
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
-                        <div class="services-box text-center">
-                            <i class="icofont icofont-prescription"></i>
-                            <h4>
-                                Free Checkup
-                            </h4>
-                            <p>
-                                Protect your child by having them get a complete physical at the ages
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- our Services ends -->
-        <!-- Appoinment starts -->
-        <section id="appoinment" class="appoinment">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6 text-center">
-                        <div class="appoinment-form fadeIn wow" data-wow-duration="1s">
-                            <h2>RANDEVU</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            <div class="divider">
-                                <span><i class="icofont icofont-bed-patient"></i></span>
+                </section>
+                <!-- Appoinment ends -->
+                <!-- Our Specialist starts -->
+                <section id="our-specialist" class="our-specialist">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                                <div class="top-text">
+                                    <h2>OUR SPECIALIST</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    <div class="divider">
+                                        <span><i class="icofont icofont-bed-patient"></i></span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="row">
+                        </div>
+                        <div class="row">
+                            <div class="our-specialist-carousel owl-carousel owl-theme">
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <form id="appoinment-form-fields" action="http://demo.vaahosttech.com/premedi/mail-part.html" method="post" class="appoinment-form-fields form-horizontal" data-fv-framework="bootstrap" data-fv-message="This value is not valid" data-fv-feedbackicons-valid="glyphicon glyphicon-ok" data-fv-feedbackicons-invalid="glyphicon glyphicon-remove" data-fv-feedbackicons-validating="glyphicon glyphicon-refresh">
-                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 no-l-padding">
-                                            <div class="form-group">
-                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                    <input class="form-control" placeholder="Adınız Soyadınız" id="name" name="name" type="text" data-fv-notempty="true" data-fv-notempty-message="The name is required" />
+                                    <div class="item text-center">
+                                        <div class="item-holder">
+                                            <div class="awsm-grid-holder">
+                                                <img src="images/team-1.png" alt="" class="img-responsive" />                                    <div class="item-data-holder">
+                                                    <div class="awsm-personal-info">
+                                                        <h4 class="doctor-name">Dr.Anjelina Rossy</h4>
+                                                        <p>MBBS MS<span class="depart">Department of Cardiology</span></p>
+                                                    </div>
+                                                    <!-- .awsm-personal-info -->
+                                                    <div class="awsm-contact-info">
+                                                        <span class="time-slot"><i class="icofont icofont-clock-time"></i><span class="days">Sat - Thu</span> 5.00pm - 7:00pm</span>
+                                                    </div>
+                                                    <!-- .awsm-contact-info -->
                                                 </div>
                                             </div>
-                                            <div class="form-group">
-                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                    <input class="form-control" placeholder="E-mail Adresiniz" id="email" name="email" type="email" data-fv-notempty="true" data-fv-notempty-message="The email address is required" data-fv-emailaddress="true" data-fv-emailaddress-message="The input is not a valid email address" />
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 validate-right-icon">
-                                                    <select class="form-control" name="doctors" id="doctors" data-fv-notempty="true" data-fv-notempty-message="This Field is required">
-                                                        <option>Doktorlarımız</option>
-                                                        <option>Murat İLGÜ</option>
-                                                        <option>Doğan AY</option>
-                                                    </select>
-                                                </div>
-                                            </div>
+                                            <!-- .awsm-grid-holder -->
                                         </div>
-                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 no-r-padding">
-                                            <div class="form-group">
-                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                    <input class="form-control" placeholder="Telefon Numaranız" id="phone" name="phone" type="text" data-fv-notempty="true" data-fv-notempty-message="Phone Number is required" data-fv-integer="true" data-fv-integer-message="The input is not a valid Phone Number" />
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 validate-right-icon">
-                                                    <input type="text" name="dateTo" class="form-control datepicker" placeholder="GG/AA/YYYY:" id="dateTo" readonly="readonly" value="" data-fv-notempty="true" data-fv-date="true" data-fv-date-format="GG/AA/YYYY" data-fv-date-message="The value is not a valid date" />
-                                                    <span class="input-group-addon add-on"><i class="icofont icofont-ui-calendar"></i></span>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 validate-right-icon">
-                                                    <select class="form-control" name="departments" id="department" data-fv-notempty="true" data-fv-notempty-message="This Field is required">
-                                                        <option>İşlemler</option>
-                                                        <option>Aşı</option>
-                                                        <option>Tedavi</option>
-                                                        <option>Bakım</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                <button type="submit" class="btn btn-default appoinment-form-submit" name="signup" data-loading-text="Processing...">Randevu Oluşturun</button>
-                                            </div>
-                                        </div>
-                                    </form>
+                                    </div>
                                 </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="item text-center">
+                                        <div class="item-holder">
+                                            <div class="awsm-grid-holder">
+                                                <img src="images/team-4.png" alt="" class="img-responsive" />                                    <div class="item-data-holder">
+                                                    <div class="awsm-personal-info">
+                                                        <h4 class="doctor-name">Dr.Anjelina Rossy</h4>
+                                                        <p>MBBS MS<span class="depart">Department of Cardiology</span></p>
+                                                    </div>
+                                                    <!-- .awsm-personal-info -->
+                                                    <div class="awsm-contact-info">
+                                                        <span class="time-slot"><i class="icofont icofont-clock-time"></i><span class="days">Sat - Thu</span> 5.00pm - 7:00pm</span>
+                                                    </div>
+                                                    <!-- .awsm-contact-info -->
+                                                </div>
+                                            </div>
+                                            <!-- .awsm-grid-holder -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="item text-center">
+                                        <div class="item-holder">
+                                            <div class="awsm-grid-holder">
+                                                <img src="images/team-5.png" alt="" class="img-responsive" />                                    <div class="item-data-holder">
+                                                    <div class="awsm-personal-info">
+                                                        <h4 class="doctor-name">Dr.Anjelina Rossy</h4>
+                                                        <p>MBBS MS<span class="depart">Department of Cardiology</span></p>
+                                                    </div>
+                                                    <!-- .awsm-personal-info -->
+                                                    <div class="awsm-contact-info">
+                                                        <span class="time-slot"><i class="icofont icofont-clock-time"></i><span class="days">Sat - Thu</span> 5.00pm - 7:00pm</span>
+                                                    </div>
+                                                    <!-- .awsm-contact-info -->
+                                                </div>
+                                            </div>
+                                            <!-- .awsm-grid-holder -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="item text-center">
+                                        <div class="item-holder">
+                                            <div class="awsm-grid-holder">
+                                                <img src="images/team-1.png" alt="" class="img-responsive" />                                    <div class="item-data-holder">
+                                                    <div class="awsm-personal-info">
+                                                        <h4 class="doctor-name">Dr.Anjelina Rossy</h4>
+                                                        <p>MBBS MS<span class="depart">Department of Cardiology</span></p>
+                                                    </div>
+                                                    <!-- .awsm-personal-info -->
+                                                    <div class="awsm-contact-info">
+                                                        <span class="time-slot"><i class="icofont icofont-clock-time"></i><span class="days">Sat - Thu</span> 5.00pm - 7:00pm</span>
+                                                    </div>
+                                                    <!-- .awsm-contact-info -->
+                                                </div>
+                                            </div>
+                                            <!-- .awsm-grid-holder -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="item text-center">
+                                        <div class="item-holder">
+                                            <div class="awsm-grid-holder">
+                                                <img src="images/team-4.png" alt="" class="img-responsive" />                                    <div class="item-data-holder">
+                                                    <div class="awsm-personal-info">
+                                                        <h4 class="doctor-name">Dr.Anjelina Rossy</h4>
+                                                        <p>MBBS MS<span class="depart">Department of Cardiology</span></p>
+                                                    </div>
+                                                    <!-- .awsm-personal-info -->
+                                                    <div class="awsm-contact-info">
+                                                        <span class="time-slot"><i class="icofont icofont-clock-time"></i><span class="days">Sat - Thu</span> 5.00pm - 7:00pm</span>
+                                                    </div>
+                                                    <!-- .awsm-contact-info -->
+                                                </div>
+                                            </div>
+                                            <!-- .awsm-grid-holder -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="item text-center">
+                                        <div class="item-holder">
+                                            <div class="awsm-grid-holder">
+                                                <img src="images/team-5.png" alt="" class="img-responsive" />                                    <div class="item-data-holder">
+                                                    <div class="awsm-personal-info">
+                                                        <h4 class="doctor-name">Dr.Anjelina Rossy</h4>
+                                                        <p>MBBS MS<span class="depart">Department of Cardiology</span></p>
+                                                    </div>
+                                                    <!-- .awsm-personal-info -->
+                                                    <div class="awsm-contact-info">
+                                                        <span class="time-slot"><i class="icofont icofont-clock-time"></i><span class="days">Sat - Thu</span> 5.00pm - 7:00pm</span>
+                                                    </div>
+                                                    <!-- .awsm-contact-info -->
+                                                </div>
+                                            </div>
+                                            <!-- .awsm-grid-holder -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="customNavigation">
+                                <a class="btn customPrevBtn"><i class="icofont icofont-double-left"></i></a>
+                                <a href="about.html" class="btn btn-default">All Doctor's</a>
+                                <a class="btn customNextBtn"><i class="icofont icofont-double-right"></i></a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- Appoinment ends -->
-        <!-- Our Specialist starts -->
-        <section id="our-specialist" class="our-specialist">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                        <div class="top-text">
-                            <h2>OUR SPECIALIST</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            <div class="divider">
-                                <span><i class="icofont icofont-bed-patient"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="our-specialist-carousel owl-carousel owl-theme">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="item text-center">
-                                <div class="item-holder">
-                                    <div class="awsm-grid-holder">
-                                        <img src="images/team-1.png" alt="" class="img-responsive" />                                    <div class="item-data-holder">
-                                            <div class="awsm-personal-info">
-                                                <h4 class="doctor-name">Dr.Anjelina Rossy</h4>
-                                                <p>MBBS MS<span class="depart">Department of Cardiology</span></p>
-                                            </div>
-                                            <!-- .awsm-personal-info -->
-                                            <div class="awsm-contact-info">
-                                                <span class="time-slot"><i class="icofont icofont-clock-time"></i><span class="days">Sat - Thu</span> 5.00pm - 7:00pm</span>
-                                            </div>
-                                            <!-- .awsm-contact-info -->
-                                        </div>
-                                    </div>
-                                    <!-- .awsm-grid-holder -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="item text-center">
-                                <div class="item-holder">
-                                    <div class="awsm-grid-holder">
-                                        <img src="images/team-4.png" alt="" class="img-responsive" />                                    <div class="item-data-holder">
-                                            <div class="awsm-personal-info">
-                                                <h4 class="doctor-name">Dr.Anjelina Rossy</h4>
-                                                <p>MBBS MS<span class="depart">Department of Cardiology</span></p>
-                                            </div>
-                                            <!-- .awsm-personal-info -->
-                                            <div class="awsm-contact-info">
-                                                <span class="time-slot"><i class="icofont icofont-clock-time"></i><span class="days">Sat - Thu</span> 5.00pm - 7:00pm</span>
-                                            </div>
-                                            <!-- .awsm-contact-info -->
-                                        </div>
-                                    </div>
-                                    <!-- .awsm-grid-holder -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="item text-center">
-                                <div class="item-holder">
-                                    <div class="awsm-grid-holder">
-                                        <img src="images/team-5.png" alt="" class="img-responsive" />                                    <div class="item-data-holder">
-                                            <div class="awsm-personal-info">
-                                                <h4 class="doctor-name">Dr.Anjelina Rossy</h4>
-                                                <p>MBBS MS<span class="depart">Department of Cardiology</span></p>
-                                            </div>
-                                            <!-- .awsm-personal-info -->
-                                            <div class="awsm-contact-info">
-                                                <span class="time-slot"><i class="icofont icofont-clock-time"></i><span class="days">Sat - Thu</span> 5.00pm - 7:00pm</span>
-                                            </div>
-                                            <!-- .awsm-contact-info -->
-                                        </div>
-                                    </div>
-                                    <!-- .awsm-grid-holder -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="item text-center">
-                                <div class="item-holder">
-                                    <div class="awsm-grid-holder">
-                                        <img src="images/team-1.png" alt="" class="img-responsive" />                                    <div class="item-data-holder">
-                                            <div class="awsm-personal-info">
-                                                <h4 class="doctor-name">Dr.Anjelina Rossy</h4>
-                                                <p>MBBS MS<span class="depart">Department of Cardiology</span></p>
-                                            </div>
-                                            <!-- .awsm-personal-info -->
-                                            <div class="awsm-contact-info">
-                                                <span class="time-slot"><i class="icofont icofont-clock-time"></i><span class="days">Sat - Thu</span> 5.00pm - 7:00pm</span>
-                                            </div>
-                                            <!-- .awsm-contact-info -->
-                                        </div>
-                                    </div>
-                                    <!-- .awsm-grid-holder -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="item text-center">
-                                <div class="item-holder">
-                                    <div class="awsm-grid-holder">
-                                        <img src="images/team-4.png" alt="" class="img-responsive" />                                    <div class="item-data-holder">
-                                            <div class="awsm-personal-info">
-                                                <h4 class="doctor-name">Dr.Anjelina Rossy</h4>
-                                                <p>MBBS MS<span class="depart">Department of Cardiology</span></p>
-                                            </div>
-                                            <!-- .awsm-personal-info -->
-                                            <div class="awsm-contact-info">
-                                                <span class="time-slot"><i class="icofont icofont-clock-time"></i><span class="days">Sat - Thu</span> 5.00pm - 7:00pm</span>
-                                            </div>
-                                            <!-- .awsm-contact-info -->
-                                        </div>
-                                    </div>
-                                    <!-- .awsm-grid-holder -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="item text-center">
-                                <div class="item-holder">
-                                    <div class="awsm-grid-holder">
-                                        <img src="images/team-5.png" alt="" class="img-responsive" />                                    <div class="item-data-holder">
-                                            <div class="awsm-personal-info">
-                                                <h4 class="doctor-name">Dr.Anjelina Rossy</h4>
-                                                <p>MBBS MS<span class="depart">Department of Cardiology</span></p>
-                                            </div>
-                                            <!-- .awsm-personal-info -->
-                                            <div class="awsm-contact-info">
-                                                <span class="time-slot"><i class="icofont icofont-clock-time"></i><span class="days">Sat - Thu</span> 5.00pm - 7:00pm</span>
-                                            </div>
-                                            <!-- .awsm-contact-info -->
-                                        </div>
-                                    </div>
-                                    <!-- .awsm-grid-holder -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="customNavigation">
-                        <a class="btn customPrevBtn"><i class="icofont icofont-double-left"></i></a>
-                        <a href="about.html" class="btn btn-default">All Doctor's</a>
-                        <a class="btn customNextBtn"><i class="icofont icofont-double-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <!-- Our Specialist ends -->
-        <!-- Recent Post starts -->
+                <!-- Our Specialist ends -->
+                <!-- Recent Post starts -->
 
-        <section id="recent-post" class="recent-post">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                        <div class="top-text">
-                            <h2>RECENT POSTS</h2>
-                            <p>lorem ipsum dolor sit amet consectetur adipiscing elit</p>
-                            <div class="divider">
-                                <span><i class="icofont icofont-bed-patient"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="normal-post">
-                        <div class="col-xs-12   col-sm-6 col-md-6 col-lg-6 ">
-                            <div class="item">
-                                <div class="post-area">
-                                    <div class="image-holder">
-                                        <img src="images/recent-post-2.png" alt="" class="img-responsive" />
-                                    </div>
-                                    <div class="post-details">
-                                        <h4 class="post-head">
-                                            <a href="blog-single.html">
-                                                Why primary treatment is important?
-                                            </a>
-                                        </h4>
-                                        <span class="post-meta"><i class="icofont icofont-user-alt-2"></i> Admin <span class="comments"><i class="icofont icofont-speech-comments"></i> 5</span></span>
-                                        <p>
-                                            Your childs primary and permanent treatment is important to help your child establish good oral
-                                        </p>
-                                        <a href="blog-single.html" class="read-more">Read More <i class="icofont icofont-bubble-right"></i></a>
+                <section id="recent-post" class="recent-post">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                                <div class="top-text">
+                                    <h2>RECENT POSTS</h2>
+                                    <p>lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                                    <div class="divider">
+                                        <span><i class="icofont icofont-bed-patient"></i></span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-12   col-sm-6 col-md-6 col-lg-6 ">
-                            <div class="item">
-                                <div class="post-area">
-                                    <div class="image-holder">
-                                        <img src="images/recent-post-1.png" alt="" class="img-responsive" />
+                        <div class="row">
+                            <div class="normal-post">
+                                <div class="col-xs-12   col-sm-6 col-md-6 col-lg-6 ">
+                                    <div class="item">
+                                        <div class="post-area">
+                                            <div class="image-holder">
+                                                <img src="images/recent-post-2.png" alt="" class="img-responsive" />
+                                            </div>
+                                            <div class="post-details">
+                                                <h4 class="post-head">
+                                                    <a href="blog-single.html">
+                                                        Why primary treatment is important?
+                                                    </a>
+                                                </h4>
+                                                <span class="post-meta"><i class="icofont icofont-user-alt-2"></i> Admin <span class="comments"><i class="icofont icofont-speech-comments"></i> 5</span></span>
+                                                <p>
+                                                    Your childs primary and permanent treatment is important to help your child establish good oral
+                                                </p>
+                                                <a href="blog-single.html" class="read-more">Read More <i class="icofont icofont-bubble-right"></i></a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="post-details">
-                                        <h4 class="post-head">
-                                            <a href="blog-single.html">
-                                                What primary treatment do & it's importance?
-                                            </a>
-                                        </h4>
-                                        <span class="post-meta"><i class="icofont icofont-user-alt-2"></i> Admin <span class="comments"><i class="icofont icofont-speech-comments"></i> 5</span></span>
-                                        <p>
-                                            There was some preliminary evidence that treatments by specialist staff working in primary
-                                        </p>
-                                        <a href="blog-single.html" class="read-more">Read More <i class="icofont icofont-bubble-right"></i></a>
+                                </div>
+                                <div class="col-xs-12   col-sm-6 col-md-6 col-lg-6 ">
+                                    <div class="item">
+                                        <div class="post-area">
+                                            <div class="image-holder">
+                                                <img src="images/recent-post-1.png" alt="" class="img-responsive" />
+                                            </div>
+                                            <div class="post-details">
+                                                <h4 class="post-head">
+                                                    <a href="blog-single.html">
+                                                        What primary treatment do & it's importance?
+                                                    </a>
+                                                </h4>
+                                                <span class="post-meta"><i class="icofont icofont-user-alt-2"></i> Admin <span class="comments"><i class="icofont icofont-speech-comments"></i> 5</span></span>
+                                                <p>
+                                                    There was some preliminary evidence that treatments by specialist staff working in primary
+                                                </p>
+                                                <a href="blog-single.html" class="read-more">Read More <i class="icofont icofont-bubble-right"></i></a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="row text-center">
+                            <a href="#" class="btn btn-default">Load More</a>
+                        </div>
                     </div>
-                </div>
-                <div class="row text-center">
-                    <a href="#" class="btn btn-default">Load More</a>
-                </div>
-            </div>
-        </section>
-        <!-- Recent Post ends -->
-    </main>
-
+                </section>
+                <!-- Recent Post ends -->
+            </main>*@
+    </div>
+</section>
 </div>
-    </section>
-</div>
+
 
