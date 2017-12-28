@@ -10,6 +10,7 @@ using PetsVet.Models;
 
 namespace PetsVet.Controllers
 {
+    [Area("Admin")]
     public class OwnersController : Controller
     {
         private readonly ApplicationDbContext _context;

@@ -9,7 +9,8 @@ using PetsVet.Data;
 using PetsVet.Models;
 
 namespace PetsVet.Controllers
-{   [Area("Admin")]
+{
+    [Area("Admin")]
     public class AnimalsController : Controller
     {
         private readonly ApplicationDbContext _context;

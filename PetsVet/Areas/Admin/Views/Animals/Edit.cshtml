@@ -5,9 +5,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Edit</h2>
+<h2>Düzenle</h2>
 
-<h4>Animal</h4>
+<h4>Hastalar</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -34,11 +34,7 @@
                 <input asp-for="Description" class="form-control" />
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Photo" class="control-label"></label>
-                <input asp-for="Photo" class="form-control" />
-                <span asp-validation-for="Photo" class="text-danger"></span>
-            </div>
+        
             
                 <input asp-for="CreateDate" type="hidden" />
                
@@ -55,7 +51,7 @@
                 <span asp-validation-for="OwnerId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Kaydet" class="btn btn-default" />
             </div>
         </form>
     </div>
